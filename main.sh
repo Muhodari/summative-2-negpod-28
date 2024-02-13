@@ -37,6 +37,10 @@ while true; do
            2)
 
 	          echo "view all student"
+		  while read -r line
+		  do
+		 	echo "$line"
+		  done <"$student_file"
 
 	      ;;	
 

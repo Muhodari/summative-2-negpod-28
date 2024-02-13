@@ -2,8 +2,4 @@ p@gmail.com,12,
 pq@gmail.com,113,
 13@s.com,14,
 qwerty@gmail.com,25,123456
-sage@gmail.com,12,123
-Alli@gmail.com,12,1334
-Pauli@gmail.com,12,1234
-gloria@gmail.com,12,gloria@gmail.com
-gloria@gmail.com,12,gloria@gmail.com
+
