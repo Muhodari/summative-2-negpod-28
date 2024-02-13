@@ -1,6 +1,6 @@
 # student registration management system
 # student list file
-student_file="Students-list_1023.txt"
+student_file="students-list_1023.txt"
 
 while true; do 
     echo "****************************************************"
@@ -49,7 +49,21 @@ while true; do
               ;;
 
 	   4)  
-	          echo "update student" 
+	          echo "update student"
+                  read -p "Enter student's Id: " studentId
+                  if grep -q ",$studentId$" "$student_file"; then
+        
+                      read -p "Enter new student email: " new_email
+                      read -p "Enter new Age: " new_age
+        
+                     # update student by Id
+		     sed -i "/^.*$studentId\$/s/[^,]*,[^,]*,$studentId$/$new_email,$new_age,$studentId/" "$student_file"
+
+                      echo "Student credentials updated successfully!"
+                 else
+                 echo "Student not found with this Id: $studentId"
+             
+                fi	
               ;;
 
            5)     
@@ -59,4 +73,4 @@ while true; do
 
 
      esac
-done
+done 

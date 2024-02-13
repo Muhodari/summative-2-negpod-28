@@ -1,5 +1,5 @@
 #sorting emails
-studentlist="Students-list_1023.txt"
+studentlist="students-list_1023.txt"
 sortedemail="student-emails.txt"
 if [ -e "$studentlist" ] && [ -s "$studentlist" ]; then
 	cut -d ',' -f 1 "$studentlist" > "$sortedemail"
