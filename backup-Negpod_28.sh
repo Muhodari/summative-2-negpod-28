@@ -8,10 +8,9 @@ remote_directory="/summative/1023-2024j/"
 
 #source Directory and backup directory
 source_dir="negpod_28-q1"
-# iniate folder backup  name
+# initiate folder backup  name
 backup_dir="backup-negpod_28-q1"
-# create backup folder
-mkdir "$backup_dir"
+
 #copy content to the backup folder
 cp -r "$source_dir" "$backup_dir"
 
