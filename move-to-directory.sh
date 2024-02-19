@@ -1,5 +1,5 @@
 #!/bin/bash
-directory="negpod_28-ql"
+directory="negpod_28-q1"
 if [ ! -d "$directory" ]; then
 	mkdir "$directory"
 	echo "Directory created: $directory"
