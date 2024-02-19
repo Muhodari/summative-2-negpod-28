@@ -8,19 +8,19 @@ remote_directory="/summative/1023-2024j/"
 
 #source Directory and backup directory
 source_dir="negpod_28-q1"
-# initiate
+# iniate folder backup  name
 backup_dir="backup-negpod_28-q1"
 # create backup folder
 mkdir "$backup_dir"
 #copy content to the backup folder
 cp -r "$source_dir" "$backup_dir"
 
-# Perform backup using rsync
+# send data to the remote server
 rsync -avz --progress -e "sshpass -p $password ssh -o StrictHostKeyChecking=no" "$backup_dir" "$username@$host:$remote_directory"
 
-# Check if backup is successful
+#  look if the data were synced
 if sshpass -p "$password" ssh -o StrictHostKeyChecking=no "$username@$host" "[ -d \"$remote_directory/$backup_dir\" ]"; then
-    echo "Backup completed successfully."
+    echo "back up process successfully completed."
 else
-    echo "Error: Backup failed."
+    echo " Error occured while backup proceess under going"
 fi
