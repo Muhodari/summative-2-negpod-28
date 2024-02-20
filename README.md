@@ -5,7 +5,7 @@ To begin, clone the project using ```git clone```, in order to get everything in
 Below I will explain the 4 main programs contained into this project: 
 
 
-**1. The Student Registration application** may be started by typing ```./ main.sh```.When it first starts,you will be given seven alternatives.
+**1. The Student Registration application** may be started by typing ```./ main.sh```.When it first starts,you will be given five alternatives.
 Select one by entering the number thet corresponds to it.
 Note:The only information kept on file about a student is this: -Email address just for the student age,you must have a student's ID in order to edit or remove their row.
 
