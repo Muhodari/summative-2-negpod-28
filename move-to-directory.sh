@@ -1,9 +1,12 @@
 #!/bin/bash
 directory="negpod_28-q1"
+#First check directory doesn't exist
 if [ ! -d "$directory" ]; then
+	#create directory if  it isnot there
 	mkdir "$directory"
 	echo "Directory created: $directory"
 else
+	#the directory is there continue with the logic to move files
 	echo "Directory arleady exist"
 fi
 
