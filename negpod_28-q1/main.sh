@@ -44,14 +44,15 @@ while true; do
 
 	      ;;	
 
-	   3)  
-	           read -p "Enter student ID to delete: " delete_id
+	   3) 
+	        echo "delete student" 
+	        read -p "Enter student ID to delete: " delete_id
 	       #checking if ID exists
-	       if grep -q ", $delete_id$" "$students_file"; then
-            sed -i "/, $delete_id$/d" "$students_file"
-            echo "Student with ID $delete_id deleted."
-    else
-	    echo "ID not found"
+	       if grep -q ",$delete_id$" "$student_file"; then
+              sed -i "/,$delete_id$/d" "$student_file"
+              echo "Student with ID $delete_id deleted."
+           else
+	            echo "ID not found"
 	       fi
             ;;
 
