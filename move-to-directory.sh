@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#initialize directory
 directory="negpod_28-q1"
 #First check directory doesn't exist
 if [ ! -d "$directory" ]; then
