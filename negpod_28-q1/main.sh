@@ -2,7 +2,8 @@
 # student list file
 student_file="students-list_1023.txt"
 
-while true; do 
+while :
+do 
     echo "****************************************************"
     echo "* Welcome to ALU Registration System               *"
     echo "****************************************************"
