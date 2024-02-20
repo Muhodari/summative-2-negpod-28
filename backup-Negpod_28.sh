@@ -1,5 +1,5 @@
 #!/bin/bash
-# initiate remote server
+# initiate remote server.
 
 host="64293e56bc62.3a2627c1.alu-cod.online"
 username="64293e56bc62"
