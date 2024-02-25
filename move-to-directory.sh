@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#initialize directory
+#initializing directory
 directory="negpod_28-q1"
 
 #First check directory doesn't exist
