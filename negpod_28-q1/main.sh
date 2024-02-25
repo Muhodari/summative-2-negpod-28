@@ -4,14 +4,14 @@ student_file="students-list_1023.txt"
 
 
 while true; do 
-    echo "*****************************************************"
-    echo "* Welcome to ALU Registration System                *"
-    echo "*****************************************************"
-    echo "1. Register student                                 *"
-    echo "2. View all students                                *"
-    echo "3. delete student                                   *"
-    echo "4. Update Student                                   *"
-    echo "5. Exit                                             *"
+    echo "****************************************"
+    echo "* Welcome to ALU Registration System   *"
+    echo "****************************************"
+    echo "1. Register student                    *"
+    echo "2. View all students                   *"
+    echo "3. delete student                      *"
+    echo "4. Update Student                      *"
+    echo "5. Exit                                *"
 
     read -p " Enter choice(1-5): " choice 
 
@@ -65,7 +65,7 @@ while true; do
                       read -p "Enter new student email: " new_email
                       read -p "Enter new Age: " new_age
         
-                     # update student by Id
+                     #update student by Id
 		     sed -i "/^.*$studentId\$/s/[^,]*,[^,]*,$studentId$/$new_email,$new_age,$studentId/" "$student_file"
 
                       echo "Student credentials updated successfully!"
