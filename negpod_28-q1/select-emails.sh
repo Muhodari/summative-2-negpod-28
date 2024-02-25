@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #sorting emails
 studentlist="students-list_1023.txt"
 sortedemail="student-emails.txt"
